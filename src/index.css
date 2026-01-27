@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --Lgreen-color: #DFECC6;
+  --black-color: #000;
+  --gray-color: #929292;
+  --divider-color: #E9E9E9;
+  --background-color: #fff;
+  --Mgreen-color: #8E9C78;
+  --Dgreen-color: #485C11
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto
+}
+
+
+
+body {
+
+  font-family: "Crimson Text";
+  overflow-x: hidden;
+}
+
+/* hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+
+  scrollbar-width: none;
+
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background-color: var(--Lgreen-color);
+}
+
+/* thumb */
+::-webkit-scrollbar-thumb {
+  background-color: var(--Dgreen-color);
+  border-radius: 99px;
+}
+
+::selection {
+
+  background-color: var(--Lgreen-color);
+
+  color: var(--Dgreen-color)
+}
